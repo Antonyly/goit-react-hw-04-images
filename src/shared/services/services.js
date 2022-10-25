@@ -20,13 +20,3 @@ export const getPhotos = async (q, page = 1) => {
     });
     return data;
 }
-
-export const searchPosts = async (q, page = 1) => {
-    const {data} = await instance("/", {
-        params: {
-            q,
-            page
-        }
-    });
-    return data;
-}
